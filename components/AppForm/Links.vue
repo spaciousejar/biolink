@@ -30,7 +30,7 @@
           </button>
           <div class="shadow sm:overflow-hidden sm:rounded-md">
             <div class="space-y-6 bg-white px-4 py-5 sm:p-6">
-              <div class="grid grid-cols-2 gap-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label
                     for="name"
@@ -59,7 +59,7 @@
                     class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                   />
                 </div>
-                <div class="col-span-2">
+                <div class="col-span-1 sm:col-span-2">
                   <label
                     for="url"
                     class="block text-sm font-medium text-gray-700"
@@ -134,5 +134,10 @@ const removeLink = (link) => {
 }
 .list-group-item i {
   cursor: pointer;
+}
+@media (max-width: 640px) {
+  .grid-cols-1 {
+    grid-template-columns: 1fr;
+  }
 }
 </style>

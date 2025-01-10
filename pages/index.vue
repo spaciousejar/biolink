@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen grid grid-cols-1 md:grid-cols-3 divide-x md:divide-x-0">
     <div class="col-span-1 md:col-span-2 h-screen flex flex-col bg-slate-100">
-      <div class="flex-1 overflow-y-auto p-4 md:p-8">
+      <div class="flex-1 overflow-y-auto p-4 sm:p-6 md:p-8">
         <app-form-profile
           v-model:name="data.n"
           v-model:desc="data.d"
@@ -22,7 +22,7 @@
         <app-form-hr />
         <app-form-links v-model="data.ls" />
       </div>
-      <div class="border-t bg-white flex flex-wrap items-center justify-between p-2 md:p-0">
+      <div class="border-t bg-white flex flex-wrap items-center justify-between p-2 sm:p-4 md:p-0">
         <button
           @click="prefillDemoData"
           class="h-12 flex items-center space-x-2 px-4 border-r text-xs font-medium bg-white text-slate-700"
@@ -122,9 +122,5 @@ const publish = () => {
   navigator.clipboard.writeText(url).then(() => {
     alert("Link copied to clipboard");
   });
-};
-
-const toggleTheme = () => {
-  document.documentElement.classList.toggle('dark');
 };
 </script>

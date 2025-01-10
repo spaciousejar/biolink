@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div class="flex flex-col items-center justify-center min-h-screen">
     <templates-simple v-if="decodedData" :acc="decodedData" />
     <div
       v-else
-      class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+      class="flex items-center justify-center h-full w-full"
     >
       <base-loading class="h-5 w-5" />
     </div>
@@ -16,4 +16,11 @@ const acc = route.query.data;
 const decodedData = ref({});
 decodedData.value = decodeData(acc);
 </script>
-<style scoped></style>
+<style scoped>
+@media (max-width: 640px) {
+  .h-5 {
+    height: 2rem; /* Adjust size for smaller screens */
+    width: 2rem; /* Adjust size for smaller screens */
+  }
+}
+</style>
