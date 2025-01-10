@@ -92,14 +92,14 @@ const prefillDemoData = () => {
     l: "https://linkedin.com/spacious_ejar",
     ls: [
       {
-        l: "My Website",
-        i: "ph:globe-duotone",
-        u: "https://example.com",
+        l: "My Portfolio",
+        i: "akar-icons:airplay-video",
+        u: "https://portfolio-main-eta-five.vercel.app/",
       },
       {
-        l: "Amazon wishlist",
-        i: "ant-design:amazon-outlined",
-        u: "https://amazon.in",
+        l: "Open Source Projects",
+        i: "hugeicons:git-merge",
+        u: "https://gitme.live",
       },
       {
         l: "React JS course",
@@ -107,14 +107,9 @@ const prefillDemoData = () => {
         u: "https://reactjs.org/",
       },
       {
-        l: "Donate for our cause",
+        l: "sponsor me",
         i: "iconoir:donate",
-        u: "https://who.int",
-      },
-      {
-        l: "Download my resume",
-        i: "ph:file-pdf",
-        u: "https://google.com",
+        u: "https://github.com/sponsors/spaciousejar",
       },
     ],
   };
