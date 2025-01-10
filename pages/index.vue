@@ -45,13 +45,6 @@
           <span> Github </span>
           <icon name="mdi:github" class="h-4 w-4" />
         </a>
-        <button
-          @click="toggleTheme"
-          class="h-12 flex items-center space-x-2 px-4 text-xs font-medium bg-white text-slate-700"
-        >
-          <span> Toggle Theme </span>
-          <icon name="mdi:theme-light-dark" class="h-4 w-4" />
-        </button>
       </div>
     </div>
     <app-form-preview :data="data" class="hidden md:block" />
