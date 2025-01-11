@@ -104,7 +104,7 @@ const prefillDemoData = () => {
         u: "https://gitme.live",
       },
       {
-        l: "React JS course",
+        l: "React JS",
         i: "grommet-icons:reactjs",
         u: "https://reactjs.org/",
       },
